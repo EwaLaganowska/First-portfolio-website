@@ -22,7 +22,6 @@ header {
 .logo {
     width: 400px;
     height: auto;
-    z-index: -1;
 }
 
 nav ul {
@@ -32,7 +31,6 @@ nav ul {
 }
 
 nav li {
-    z-index: 100;
     display: inline-block;
     margin: 1em;
     font-size: .9em;
@@ -208,7 +206,9 @@ nav a:focus {
         transform: translateX(27%);
     }
     nav {
-    float: right;    
+    float: right;
+    position: relative;
+    z-index: 10;    
     }
 }
 
